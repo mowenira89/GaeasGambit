@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://davqeghjofnvx"]
+
+[ext_resource type="Script" path="res://ui/card_data_display.gd" id="1_pw8c4"]
+
+[node name="CardDataDisplay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pw8c4")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 255.0
+offset_bottom = 214.0
+mouse_filter = 1
+
+[node name="Container" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Name" type="Label" parent="PanelContainer/Container"]
+layout_mode = 2
+size_flags_vertical = 0
+horizontal_alignment = 1
+
+[node name="Stats" type="Label" parent="PanelContainer/Container"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="Traits" type="Label" parent="PanelContainer/Container"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

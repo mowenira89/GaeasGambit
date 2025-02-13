@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://d1pxwc5t7pang"]
+
+[ext_resource type="Texture2D" uid="uid://cqp1cyjykcjh1" path="res://cards/images/territories/arid_grassland.jpg" id="1_6xmnb"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_djame"]
+
+[resource]
+script = ExtResource("2_djame")
+image = ExtResource("1_6xmnb")
+name = "Arid Grassland"
+capacity = 12.0
+movement_req = 1.0
+type = 0
+points = {
+"Basket": 3,
+"Book": 4,
+"Gear": 4,
+"Spear": 7
+}
+capacity_filled = 0.0

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://dt4xu3vwjbhwg"]
+
+[ext_resource type="Texture2D" uid="uid://c8gyqy50kvpr2" path="res://cards/images/territories/jungle_riverlands.jpg" id="1_d8i2p"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_qxxdf"]
+
+[resource]
+script = ExtResource("2_qxxdf")
+image = ExtResource("1_d8i2p")
+name = "Jungle Riverland"
+capacity = 6.0
+movement_req = 1.0
+type = 2
+points = {
+"Basket": 10,
+"Book": 10,
+"Gear": 8,
+"Spear": 5
+}
+capacity_filled = 0.0

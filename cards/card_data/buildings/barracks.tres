@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://dh13x8ywf5sbn"]
+
+[ext_resource type="Texture2D" uid="uid://bbstsqkmlwdhd" path="res://cards/images/buildings/barracks.jpg" id="1_fs8qk"]
+[ext_resource type="Script" path="res://cards/building.gd" id="2_ivb8f"]
+
+[resource]
+script = ExtResource("2_ivb8f")
+image = ExtResource("1_fs8qk")
+sprite = ExtResource("1_fs8qk")
+name = "Barracks"
+type = 0
+LVL = 6.0
+STR = 0.0
+VIT = 25.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

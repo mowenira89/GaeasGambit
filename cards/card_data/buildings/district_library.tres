@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://buogdbotdwe24"]
+
+[ext_resource type="Texture2D" uid="uid://hfnwln3i8bdd" path="res://cards/images/buildings/district_library.jpg" id="1_raru1"]
+[ext_resource type="Script" path="res://cards/building.gd" id="2_il57l"]
+
+[resource]
+script = ExtResource("2_il57l")
+image = ExtResource("1_raru1")
+sprite = ExtResource("1_raru1")
+name = "District Library"
+type = 2
+LVL = 6.0
+STR = 0.0
+VIT = 15.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://dc1q2nm3bo1oy"]
+
+[ext_resource type="Texture2D" uid="uid://dgyvqkqgdxame" path="res://cards/images/territories/barren_waste.jpg" id="1_evxk7"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_nyo41"]
+
+[resource]
+script = ExtResource("2_nyo41")
+image = ExtResource("1_evxk7")
+name = "Barren Waste"
+capacity = 12.0
+movement_req = 1.0
+type = 0
+points = {
+"Basket": 1,
+"Book": 1,
+"Gear": 1,
+"Spear": 1
+}
+capacity_filled = 0.0

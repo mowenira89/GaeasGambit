@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=4 format=3 uid="uid://dpw6w04c0jwsq"]
+
+[ext_resource type="Script" path="res://cards/abilities/ability.gd" id="1_epkjc"]
+[ext_resource type="Texture2D" uid="uid://dubc3efaj3u0t" path="res://cards/images/agents/mobile_long_gun.jpg" id="1_odrd4"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_3wkne"]
+
+[resource]
+script = ExtResource("2_3wkne")
+image = ExtResource("1_odrd4")
+sprite = ExtResource("1_odrd4")
+name = "Mobile Artillery"
+type = 1
+LVL = 15.0
+STR = 10.0
+VIT = 6.0
+MOV = 1.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 10,
+"Spear": 0
+}
+traits = Array[int]([1])
+abilities = Array[ExtResource("1_epkjc")]([])

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Deck" load_steps=3 format=3 uid="uid://dnoefi32trirs"]
+
+[ext_resource type="Script" path="res://cards/card_data.gd" id="1_f6psg"]
+[ext_resource type="Script" path="res://cards/deck.gd" id="3_0em61"]
+
+[resource]
+script = ExtResource("3_0em61")
+_name = "Test"
+pile = Array[ExtResource("1_f6psg")]([])

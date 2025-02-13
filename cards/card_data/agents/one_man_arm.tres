@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=3 format=3 uid="uid://bepdshb6ep13u"]
+
+[ext_resource type="Texture2D" uid="uid://bgl75pn706f80" path="res://cards/images/agents/one_man_army.jpg" id="1_1lddi"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_duulp"]
+
+[resource]
+script = ExtResource("2_duulp")
+image = ExtResource("1_1lddi")
+sprite = ExtResource("1_1lddi")
+name = "One Man Army"
+type = 0
+LVL = 6.0
+STR = 6.0
+VIT = 5.0
+MOV = 2.0
+cost = {
+"Basket": 1,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

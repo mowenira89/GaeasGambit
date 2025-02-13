@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=4 format=3 uid="uid://ckkdk7boln52f"]
+
+[ext_resource type="Script" path="res://cards/abilities/ability.gd" id="1_du7gu"]
+[ext_resource type="Texture2D" uid="uid://ir5djfvms5vd" path="res://cards/images/agents/armored_gunman.jpg" id="1_esmx5"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_4d4ar"]
+
+[resource]
+script = ExtResource("2_4d4ar")
+image = ExtResource("1_esmx5")
+sprite = ExtResource("1_esmx5")
+name = "Armored Gunman"
+type = 0
+LVL = 7.0
+STR = 3.0
+VIT = 6.0
+MOV = 2.0
+cost = {
+"Basket": 1,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+abilities = Array[ExtResource("1_du7gu")]([])

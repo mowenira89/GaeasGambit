@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://did2qnckbx2tr"]
+
+[ext_resource type="Texture2D" uid="uid://bswg8hwo3jp7m" path="res://cards/images/territories/Tainted Swamp.jpg" id="1_oj2b7"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_j6vpq"]
+
+[resource]
+script = ExtResource("2_j6vpq")
+image = ExtResource("1_oj2b7")
+name = "Tainted Swamp"
+capacity = 5.0
+movement_req = 2.0
+type = 2
+points = {
+"Basket": 0,
+"Book": 7,
+"Gear": 6,
+"Spear": 7
+}
+capacity_filled = 0.0

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://d3kgc448cjk5d"]
+
+[ext_resource type="Texture2D" uid="uid://dpx5ji8v05cat" path="res://cards/images/territories/land_of_strange_stones.jpg" id="1_iv7f2"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_ex4qq"]
+
+[resource]
+script = ExtResource("2_ex4qq")
+image = ExtResource("1_iv7f2")
+name = "Land of Strange Stones"
+capacity = 10.0
+movement_req = 1.0
+type = 0
+points = {
+"Basket": 3,
+"Book": 10,
+"Gear": 8,
+"Spear": 5
+}
+capacity_filled = 0.0

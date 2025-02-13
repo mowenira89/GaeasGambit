@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://d2f4ohqnarcyj"]
+
+[ext_resource type="Texture2D" uid="uid://c47bgldgokdly" path="res://cards/images/territories/tall_tree_forest.jpg" id="1_b3u83"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_dlvwa"]
+
+[resource]
+script = ExtResource("2_dlvwa")
+image = ExtResource("1_b3u83")
+name = "Tall Trees"
+capacity = 8.0
+movement_req = 2.0
+type = 1
+points = {
+"Basket": 5,
+"Book": 8,
+"Gear": 8,
+"Spear": 5
+}
+capacity_filled = 0.0

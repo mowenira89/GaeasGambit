@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://01cgfdvxousg"]
+
+[ext_resource type="Texture2D" uid="uid://5i8bg1kbdapo" path="res://cards/images/buildings/gargantuan_fort.jpg" id="1_ko4f1"]
+[ext_resource type="Script" path="res://cards/building.gd" id="2_igyqu"]
+
+[resource]
+script = ExtResource("2_igyqu")
+image = ExtResource("1_ko4f1")
+sprite = ExtResource("1_ko4f1")
+name = "Gargantuan Fort"
+type = 0
+LVL = 8.0
+STR = 5.0
+VIT = 50.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 10
+}
+traits = Array[int]([])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://b6f07ot3fncqe"]
+
+[ext_resource type="Texture2D" uid="uid://cjdse1yijwlhj" path="res://cards/images/territories/vast_ocean.jpg" id="1_8kfai"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_4qkgk"]
+
+[resource]
+script = ExtResource("2_4qkgk")
+image = ExtResource("1_8kfai")
+name = "Vast Ocean"
+capacity = 12.0
+movement_req = 2.0
+type = 4
+points = {
+"Basket": 12,
+"Book": 6,
+"Gear": 5,
+"Spear": 5
+}
+capacity_filled = 0.0

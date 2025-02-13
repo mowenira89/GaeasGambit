@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://ussy5abunai6"]
+
+[ext_resource type="Script" path="res://ui/targeting.gd" id="1_5g4mh"]
+
+[node name="Targeting" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 100.0
+script = ExtResource("1_5g4mh")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 1
+offset_left = 32.0
+offset_top = 2.0
+offset_right = 152.0
+offset_bottom = 52.0
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "Select Target"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 1.0
+offset_top = 55.0
+offset_right = 198.0
+offset_bottom = 95.0
+
+[node name="Notice" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Improper Target"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cancel" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 164.0
+offset_top = 6.0
+offset_right = 258.0
+offset_bottom = 47.0
+text = "Cancel"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 4.0
+offset_right = 27.0
+offset_bottom = 44.0
+
+[connection signal="pressed" from="Cancel" to="." method="_on_cancel_pressed"]

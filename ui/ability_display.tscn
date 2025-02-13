@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddeapkuppgjt5"]
+
+[ext_resource type="Script" path="res://ui/ability_display.gd" id="1_ak8u7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ak8u7")
+
+[node name="ColorRect" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 132.0
+offset_bottom = 45.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 2
+
+[connection signal="gui_input" from="ColorRect" to="." method="_on_color_rect_gui_input"]

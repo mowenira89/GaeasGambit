@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=3 format=3 uid="uid://x3yhcnfxnfex"]
+
+[ext_resource type="Texture2D" uid="uid://3kjw7cp4pwf7" path="res://cards/images/agents/elven_counsellors.jpg" id="1_2n2hr"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_vw63i"]
+
+[resource]
+script = ExtResource("2_vw63i")
+image = ExtResource("1_2n2hr")
+sprite = ExtResource("1_2n2hr")
+name = "Elven Counsellors"
+type = 2
+LVL = 10.0
+STR = 0.0
+VIT = 6.0
+MOV = 2.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

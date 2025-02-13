@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://dbkqlsyh6et10"]
+
+[ext_resource type="Texture2D" uid="uid://dxw3d823frpiw" path="res://cards/images/territories/pleasant_pasture.jpg" id="1_wjl7x"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_tanx8"]
+
+[resource]
+script = ExtResource("2_tanx8")
+image = ExtResource("1_wjl7x")
+name = "Pleasant Pasture"
+capacity = 12.0
+movement_req = 1.0
+type = 0
+points = {
+"Basket": 10,
+"Book": 7,
+"Gear": 7,
+"Spear": 7
+}
+capacity_filled = 0.0

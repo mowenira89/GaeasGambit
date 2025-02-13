@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://cbhvuodx11m3j"]
+
+[ext_resource type="Texture2D" uid="uid://ev16mpx52i2l" path="res://cards/images/territories/sky_splitting_mountain.jpg" id="1_t1f6m"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_a2233"]
+
+[resource]
+script = ExtResource("2_a2233")
+image = ExtResource("1_t1f6m")
+name = "Sky Splitting Mountain"
+capacity = 5.0
+movement_req = 3.0
+type = 3
+points = {
+"Basket": 3,
+"Book": 9,
+"Gear": 9,
+"Spear": 7
+}
+capacity_filled = 0.0

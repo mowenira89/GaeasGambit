@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm8cf35fhu1ie"]
+
+[ext_resource type="Script" path="res://ui/points_display.gd" id="1_snm4q"]
+
+[sub_resource type="Theme" id="Theme_ubilj"]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 30
+
+[node name="PointsDisplay" type="VBoxContainer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+theme = SubResource("Theme_ubilj")
+script = ExtResource("1_snm4q")
+
+[node name="Spears" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+color = Color(1, 0.673398, 0.640149, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Spears"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 3
+
+[node name="Label" type="Label" parent="Spears/MarginContainer"]
+layout_mode = 2
+text = "S"
+
+[node name="SpearPoints" type="Label" parent="Spears/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Gears" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+color = Color(0.788235, 0.67451, 0.639216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Gears"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 3
+
+[node name="Label" type="Label" parent="Gears/MarginContainer"]
+layout_mode = 2
+text = "G"
+
+[node name="GearPoints" type="Label" parent="Gears/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Books" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+color = Color(0.961904, 0.893082, 0.533085, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Books"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 3
+
+[node name="Label" type="Label" parent="Books/MarginContainer"]
+layout_mode = 2
+text = "Bo"
+
+[node name="BookPoints" type="Label" parent="Books/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Baskets" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+color = Color(0.722676, 0.972411, 0.567384, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Baskets"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 3
+
+[node name="Label" type="Label" parent="Baskets/MarginContainer"]
+layout_mode = 2
+text = "Ba"
+
+[node name="BasketPoints" type="Label" parent="Baskets/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8

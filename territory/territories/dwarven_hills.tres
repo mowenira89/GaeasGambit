@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://uhw5u7r8skcm"]
+
+[ext_resource type="Texture2D" uid="uid://ba0ccgm0phgi5" path="res://cards/images/territories/dwarven_hills.jpg" id="1_ci26v"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_2bv6m"]
+
+[resource]
+script = ExtResource("2_2bv6m")
+image = ExtResource("1_ci26v")
+name = "Dwarven Hills"
+capacity = 9.0
+movement_req = 1.0
+defense_bonus = 2.0
+type = 3
+points = {
+"Basket": 7,
+"Book": 10,
+"Gear": 10,
+"Spear": 6
+}

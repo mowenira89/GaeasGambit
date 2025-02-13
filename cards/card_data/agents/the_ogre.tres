@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=3 format=3 uid="uid://bhe1cm3dxosx0"]
+
+[ext_resource type="Texture2D" uid="uid://b0j7r17dlj6c2" path="res://cards/images/agents/the_ogre.jpg" id="1_ar8nc"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_cb6ao"]
+
+[resource]
+script = ExtResource("2_cb6ao")
+image = ExtResource("1_ar8nc")
+sprite = ExtResource("1_ar8nc")
+name = "The Ogre"
+type = 0
+LVL = 7.0
+STR = 6.0
+VIT = 16.0
+MOV = 3.0
+cost = {
+"Basket": 10,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

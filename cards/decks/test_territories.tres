@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="TerritoriesDeck" load_steps=15 format=3 uid="uid://qxogk2108bab"]
+
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="1_b8dcv"]
+[ext_resource type="Script" path="res://territory/territories_deck.gd" id="1_mw0rv"]
+[ext_resource type="Resource" uid="uid://d1pxwc5t7pang" path="res://territory/territories/arid_grassland.tres" id="2_omr8s"]
+[ext_resource type="Resource" uid="uid://dc1q2nm3bo1oy" path="res://territory/territories/barren_waste.tres" id="3_cmfqi"]
+[ext_resource type="Resource" uid="uid://uhw5u7r8skcm" path="res://territory/territories/dwarven_hills.tres" id="4_qtnj6"]
+[ext_resource type="Resource" uid="uid://dt4xu3vwjbhwg" path="res://territory/territories/jungle_riverland.tres" id="5_8n8ox"]
+[ext_resource type="Resource" uid="uid://d3kgc448cjk5d" path="res://territory/territories/land_of_strange_stones.tres" id="6_hskk7"]
+[ext_resource type="Resource" uid="uid://dbkqlsyh6et10" path="res://territory/territories/pleasant_pasture.tres" id="7_0aaqh"]
+[ext_resource type="Resource" uid="uid://b6f07ot3fncqe" path="res://territory/territories/vast_ocean.tres" id="8_fwr2y"]
+[ext_resource type="Resource" uid="uid://d2f4ohqnarcyj" path="res://territory/territories/tall_trees.tres" id="9_h2u1d"]
+[ext_resource type="Resource" uid="uid://did2qnckbx2tr" path="res://territory/territories/tainted_swamp.tres" id="10_4l7yu"]
+[ext_resource type="Resource" uid="uid://bjrfp1cd3i4uf" path="res://territory/territories/sulfuric_bog.tres" id="11_l58gj"]
+[ext_resource type="Resource" uid="uid://3ugf3wpewqdb" path="res://territory/territories/stormy_sea.tres" id="12_ar8ub"]
+[ext_resource type="Resource" uid="uid://cbhvuodx11m3j" path="res://territory/territories/sky_splitting_mountain.tres" id="13_mw2ce"]
+
+[resource]
+script = ExtResource("1_mw0rv")
+pile = Array[ExtResource("1_b8dcv")]([ExtResource("2_omr8s"), ExtResource("3_cmfqi"), ExtResource("4_qtnj6"), ExtResource("5_8n8ox"), ExtResource("6_hskk7"), ExtResource("7_0aaqh"), ExtResource("8_fwr2y"), ExtResource("9_h2u1d"), ExtResource("10_4l7yu"), ExtResource("11_l58gj"), ExtResource("12_ar8ub"), ExtResource("13_mw2ce")])

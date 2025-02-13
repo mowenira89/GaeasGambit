@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://3ugf3wpewqdb"]
+
+[ext_resource type="Texture2D" uid="uid://bevsk4q4g3wbx" path="res://cards/images/territories/stormy_sea.png" id="1_hl35r"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_uljor"]
+
+[resource]
+script = ExtResource("2_uljor")
+image = ExtResource("1_hl35r")
+name = "Stormy Sea"
+capacity = 5.0
+movement_req = 3.0
+type = 4
+points = {
+"Basket": 5,
+"Book": 5,
+"Gear": 5,
+"Spear": 5
+}
+capacity_filled = 0.0

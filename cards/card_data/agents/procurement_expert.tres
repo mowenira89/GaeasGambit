@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=3 format=3 uid="uid://b8ndcovmyxs0l"]
+
+[ext_resource type="Texture2D" uid="uid://blijs5w5pkxlc" path="res://cards/images/agents/procurement_expert.jpg" id="1_ha84h"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_4kwgm"]
+
+[resource]
+script = ExtResource("2_4kwgm")
+image = ExtResource("1_ha84h")
+sprite = ExtResource("1_ha84h")
+name = "Procurement Expert"
+type = 1
+LVL = 3.0
+STR = 0.0
+VIT = 3.0
+MOV = 3.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 5,
+"Spear": 0
+}
+traits = Array[int]([])

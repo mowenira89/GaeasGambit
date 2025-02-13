@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TerritoryData" load_steps=3 format=3 uid="uid://bjrfp1cd3i4uf"]
+
+[ext_resource type="Texture2D" uid="uid://drjqdldbja4ba" path="res://cards/images/territories/sulfuric_bog.jpg" id="1_tl0oj"]
+[ext_resource type="Script" path="res://territory/territory_data.gd" id="2_e2yu4"]
+
+[resource]
+script = ExtResource("2_e2yu4")
+image = ExtResource("1_tl0oj")
+name = "Sulfuric Bog"
+capacity = 5.0
+movement_req = 2.0
+type = 2
+points = {
+"Basket": 2,
+"Book": 7,
+"Gear": 7,
+"Spear": 7
+}
+capacity_filled = 0.0

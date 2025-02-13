@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=3 format=3 uid="uid://dtg30dox6xxa"]
+
+[ext_resource type="Texture2D" uid="uid://c51gto7s3jp8e" path="res://cards/images/agents/peasant_force.jpg" id="1_kauy6"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="2_71rfg"]
+
+[resource]
+script = ExtResource("2_71rfg")
+image = ExtResource("1_kauy6")
+sprite = ExtResource("1_kauy6")
+name = "Peasant Force"
+type = 0
+LVL = 3.0
+STR = 7.0
+VIT = 15.0
+MOV = 2.0
+cost = {
+"Basket": 10,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

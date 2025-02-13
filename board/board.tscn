@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://duehychs7w613"]
+
+[ext_resource type="Script" path="res://board/board.gd" id="1_7llgy"]
+[ext_resource type="Script" path="res://main/camera.gd" id="2_sxma1"]
+[ext_resource type="PackedScene" uid="uid://qe23fedhbxw7" path="res://territory/territory.tscn" id="3_1dngl"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_7llgy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(100, 504)
+script = ExtResource("2_sxma1")
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(1000, 1000)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Territories" type="GridContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+
+[node name="Territory1" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory2" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory3" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory4" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory5" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory6" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory7" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory8" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory9" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory10" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory11" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory12" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory13" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory14" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory15" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory16" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory17" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory18" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory19" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory20" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory21" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory22" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory23" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory24" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2
+
+[node name="Territory25" parent="Control/Territories" instance=ExtResource("3_1dngl")]
+layout_mode = 2

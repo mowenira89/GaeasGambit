@@ -1,0 +1,236 @@
+[gd_resource type="Resource" script_class="Player" load_steps=29 format=3 uid="uid://bsg2uu41d28yo"]
+
+[ext_resource type="Script" path="res://cards/card_data.gd" id="1_wm1mn"]
+[ext_resource type="Texture2D" uid="uid://ir5djfvms5vd" path="res://cards/images/agents/armored_gunman.jpg" id="2_mxx1a"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="3_ewuda"]
+[ext_resource type="Script" path="res://player/player.gd" id="3_v1f7a"]
+[ext_resource type="Texture2D" uid="uid://3kjw7cp4pwf7" path="res://cards/images/agents/elven_counsellors.jpg" id="4_w2ll5"]
+[ext_resource type="Texture2D" uid="uid://blijs5w5pkxlc" path="res://cards/images/agents/procurement_expert.jpg" id="5_cgf8h"]
+[ext_resource type="Texture2D" uid="uid://c51gto7s3jp8e" path="res://cards/images/agents/peasant_force.jpg" id="6_823nu"]
+[ext_resource type="Texture2D" uid="uid://bbstsqkmlwdhd" path="res://cards/images/buildings/barracks.jpg" id="7_iuivl"]
+[ext_resource type="Script" path="res://cards/building.gd" id="8_3vhhv"]
+[ext_resource type="Texture2D" uid="uid://hfnwln3i8bdd" path="res://cards/images/buildings/district_library.jpg" id="9_2c3g3"]
+[ext_resource type="Texture2D" uid="uid://c1mmc07qyqgii" path="res://cards/images/buildings/field_camp.jpg" id="10_arlhb"]
+[ext_resource type="Texture2D" uid="uid://5i8bg1kbdapo" path="res://cards/images/buildings/gargantuan_fort.jpg" id="11_nroy7"]
+[ext_resource type="Texture2D" uid="uid://qqw7mhg7fxdu" path="res://cards/images/buildings/hidden_temple.jpg" id="12_01qxt"]
+[ext_resource type="Texture2D" uid="uid://bgl75pn706f80" path="res://cards/images/agents/one_man_army.jpg" id="13_3lbuo"]
+[ext_resource type="Texture2D" uid="uid://dubc3efaj3u0t" path="res://cards/images/agents/mobile_long_gun.jpg" id="14_eg6ux"]
+[ext_resource type="Script" path="res://cards/deck.gd" id="15_c76w3"]
+
+[sub_resource type="Resource" id="Resource_gpuu5"]
+script = ExtResource("3_ewuda")
+image = ExtResource("2_mxx1a")
+sprite = ExtResource("2_mxx1a")
+name = "Armored Gunman"
+type = 0
+LVL = 7.0
+STR = 3.0
+VIT = 6.0
+MOV = 2.0
+cost = {
+"Basket": 1,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_1hpvk"]
+script = ExtResource("3_ewuda")
+image = ExtResource("4_w2ll5")
+sprite = ExtResource("4_w2ll5")
+name = "Elven Counsellors"
+type = 2
+LVL = 10.0
+STR = 0.0
+VIT = 6.0
+MOV = 2.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_rul3r"]
+script = ExtResource("3_ewuda")
+image = ExtResource("5_cgf8h")
+sprite = ExtResource("5_cgf8h")
+name = "Procurement Expert"
+type = 1
+LVL = 3.0
+STR = 0.0
+VIT = 3.0
+MOV = 3.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 5,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_ukekw"]
+script = ExtResource("3_ewuda")
+image = ExtResource("6_823nu")
+sprite = ExtResource("6_823nu")
+name = "Peasant Force"
+type = 0
+LVL = 3.0
+STR = 7.0
+VIT = 15.0
+MOV = 2.0
+cost = {
+"Basket": 10,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_ucp1t"]
+script = ExtResource("8_3vhhv")
+image = ExtResource("7_iuivl")
+sprite = ExtResource("7_iuivl")
+name = "Barracks"
+type = 0
+LVL = 6.0
+STR = 0.0
+VIT = 25.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_qvri6"]
+script = ExtResource("8_3vhhv")
+image = ExtResource("9_2c3g3")
+sprite = ExtResource("9_2c3g3")
+name = "District Library"
+type = 2
+LVL = 6.0
+STR = 0.0
+VIT = 15.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_nj8v4"]
+script = ExtResource("8_3vhhv")
+image = ExtResource("10_arlhb")
+sprite = ExtResource("10_arlhb")
+name = "Field Camp"
+type = 0
+LVL = 3.0
+STR = 0.0
+VIT = 10.0
+MOV = 1.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_pbeib"]
+script = ExtResource("8_3vhhv")
+image = ExtResource("11_nroy7")
+sprite = ExtResource("11_nroy7")
+name = "Gargantuan Fort"
+type = 0
+LVL = 8.0
+STR = 5.0
+VIT = 50.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 10
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_ovjjc"]
+script = ExtResource("8_3vhhv")
+image = ExtResource("12_01qxt")
+sprite = ExtResource("12_01qxt")
+name = "Hidden Temple"
+type = 2
+LVL = 3.0
+STR = 0.0
+VIT = 20.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_31eqc"]
+script = ExtResource("3_ewuda")
+image = ExtResource("13_3lbuo")
+sprite = ExtResource("13_3lbuo")
+name = "One Man Army"
+type = 0
+LVL = 6.0
+STR = 6.0
+VIT = 5.0
+MOV = 2.0
+cost = {
+"Basket": 1,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])
+
+[sub_resource type="Resource" id="Resource_y2bw5"]
+script = ExtResource("3_ewuda")
+image = ExtResource("14_eg6ux")
+sprite = ExtResource("14_eg6ux")
+name = "Mobile Artillery"
+type = 0
+LVL = 6.0
+STR = 10.0
+VIT = 6.0
+MOV = 1.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 10,
+"Spear": 0
+}
+traits = Array[int]([1])
+
+[sub_resource type="Resource" id="Resource_r5hlt"]
+script = ExtResource("15_c76w3")
+_name = "Deck1"
+pile = Array[ExtResource("1_wm1mn")]([SubResource("Resource_gpuu5"), SubResource("Resource_1hpvk"), SubResource("Resource_rul3r"), SubResource("Resource_ukekw"), SubResource("Resource_ucp1t"), SubResource("Resource_qvri6"), SubResource("Resource_nj8v4"), SubResource("Resource_pbeib"), SubResource("Resource_ovjjc"), SubResource("Resource_31eqc"), SubResource("Resource_y2bw5")])
+
+[resource]
+script = ExtResource("3_v1f7a")
+name = "Test"
+color = Color(0.760196, 5.20775e-05, 2.83009e-05, 1)
+points = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+deck = SubResource("Resource_r5hlt")
+hand = Array[ExtResource("1_wm1mn")]([])
+discard = Array[ExtResource("1_wm1mn")]([])
+graveyard = Array[ExtResource("1_wm1mn")]([])

@@ -1,0 +1,157 @@
+[gd_scene load_steps=18 format=3 uid="uid://dcu4qyg42672p"]
+
+[ext_resource type="PackedScene" uid="uid://duehychs7w613" path="res://board/board.tscn" id="1_lg47m"]
+[ext_resource type="Script" path="res://ui/ui_manager.gd" id="3_hswep"]
+[ext_resource type="Script" path="res://main/hand.gd" id="3_vj3se"]
+[ext_resource type="PackedScene" uid="uid://dm8cf35fhu1ie" path="res://ui/points_display.tscn" id="4_0pa1g"]
+[ext_resource type="Script" path="res://main/states/state_machine.gd" id="4_g3wqc"]
+[ext_resource type="Script" path="res://main/states/setup_round.gd" id="5_303ne"]
+[ext_resource type="PackedScene" uid="uid://ussy5abunai6" path="res://ui/targeting.tscn" id="5_p8l33"]
+[ext_resource type="Script" path="res://ui/card_detail_display_holder.gd" id="6_dq4gs"]
+[ext_resource type="Script" path="res://main/states/payment_round.gd" id="6_g2t6y"]
+[ext_resource type="Script" path="res://main/states/draw_round.gd" id="7_6ilga"]
+[ext_resource type="Script" path="res://main/states/deployment_round.gd" id="9_74kkr"]
+[ext_resource type="Script" path="res://main/states/targeting_state.gd" id="10_7ph4q"]
+[ext_resource type="Script" path="res://main/states/end_round.gd" id="12_jw1tc"]
+[ext_resource type="Script" path="res://main/states/response_round.gd" id="14_ih6ex"]
+[ext_resource type="Script" path="res://main/states/game_over.gd" id="15_6v1r4"]
+
+[sub_resource type="Theme" id="Theme_vtd82"]
+Button/font_sizes/font_size = 30
+Label/colors/font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjhl6"]
+bg_color = Color(0.203922, 0.541176, 0.219608, 1)
+
+[node name="Main" type="Node2D"]
+
+[node name="Board" parent="." instance=ExtResource("1_lg47m")]
+position = Vector2(844, -3)
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("3_hswep")
+
+[node name="Hand" type="HBoxContainer" parent="UI"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+script = ExtResource("3_vj3se")
+
+[node name="Buttons" type="HBoxContainer" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EndTurn" type="Button" parent="UI/Buttons"]
+layout_mode = 2
+text = "End Turn"
+
+[node name="PointsDisplay" parent="UI" instance=ExtResource("4_0pa1g")]
+
+[node name="RoundDisplay" parent="UI" instance=ExtResource("5_p8l33")]
+offset_left = 106.0
+offset_top = 4.0
+offset_right = 306.0
+offset_bottom = 104.0
+
+[node name="CardDetailDisplayHolder" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 307.0
+offset_top = 14.0
+offset_right = 347.0
+offset_bottom = 54.0
+script = ExtResource("6_dq4gs")
+
+[node name="CardsDisplay" type="GridContainer" parent="UI"]
+visible = false
+custom_minimum_size = Vector2(850, 1000)
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 5
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("4_g3wqc")
+
+[node name="SetupRound" type="Node" parent="StateMachine"]
+script = ExtResource("5_303ne")
+
+[node name="DrawRound" type="Node" parent="StateMachine"]
+script = ExtResource("7_6ilga")
+
+[node name="PaymentRound" type="Node" parent="StateMachine"]
+script = ExtResource("6_g2t6y")
+
+[node name="DeploymentRound" type="Node" parent="StateMachine"]
+script = ExtResource("9_74kkr")
+
+[node name="TargetingState" type="Node" parent="StateMachine"]
+script = ExtResource("10_7ph4q")
+
+[node name="EndRound" type="Node" parent="StateMachine"]
+script = ExtResource("12_jw1tc")
+
+[node name="ResponseRound" type="Node" parent="StateMachine"]
+script = ExtResource("14_ih6ex")
+
+[node name="GameOver" type="Node" parent="StateMachine"]
+script = ExtResource("15_6v1r4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_vtd82")
+theme_override_styles/panel = SubResource("StyleBoxFlat_wjhl6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+color = Color(0.490196, 0.752941, 0.513726, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "Gaea's Gambit"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "New Game"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "X"
+
+[connection signal="pressed" from="UI/Buttons/EndTurn" to="UI" method="_on_end_turn_pressed"]

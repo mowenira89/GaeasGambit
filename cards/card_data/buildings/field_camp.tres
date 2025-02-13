@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://dyc3cyyschfo8"]
+
+[ext_resource type="Texture2D" uid="uid://c1mmc07qyqgii" path="res://cards/images/buildings/field_camp.jpg" id="1_68e7q"]
+[ext_resource type="Script" path="res://cards/building.gd" id="2_m04jm"]
+
+[resource]
+script = ExtResource("2_m04jm")
+image = ExtResource("1_68e7q")
+sprite = ExtResource("1_68e7q")
+name = "Field Camp"
+type = 0
+LVL = 3.0
+STR = 0.0
+VIT = 10.0
+MOV = 1.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

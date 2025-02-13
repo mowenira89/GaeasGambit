@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://qe23fedhbxw7"]
+
+[ext_resource type="Script" path="res://territory/territory.gd" id="1_qwgmn"]
+[ext_resource type="Texture2D" uid="uid://cp65tsxy10wvk" path="res://icon.svg" id="2_5rip3"]
+
+[node name="Territory" type="Control"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 150.0
+offset_bottom = 150.0
+script = ExtResource("1_qwgmn")
+
+[node name="OuterBorder" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.454524, 0.454524, 0.454524, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="OuterBorder"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="InnerBorder" type="ColorRect" parent="OuterBorder/MarginContainer"]
+layout_mode = 2
+mouse_filter = 1
+color = Color(0.356863, 0.356863, 0.356863, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="OuterBorder/MarginContainer/InnerBorder"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureRect" parent="OuterBorder/MarginContainer/InnerBorder/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_5rip3")
+expand_mode = 1
+
+[node name="Buildings" type="Node2D" parent="."]
+
+[node name="Agents" type="Node2D" parent="."]
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="gui_input" from="OuterBorder/MarginContainer/InnerBorder/MarginContainer/TextureRect" to="." method="_on_texture_rect_gui_input"]

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Building" load_steps=3 format=3 uid="uid://bayjgmak4ae5g"]
+
+[ext_resource type="Texture2D" uid="uid://qqw7mhg7fxdu" path="res://cards/images/buildings/hidden_temple.jpg" id="1_8uixh"]
+[ext_resource type="Script" path="res://cards/building.gd" id="2_uh8bv"]
+
+[resource]
+script = ExtResource("2_uh8bv")
+image = ExtResource("1_8uixh")
+sprite = ExtResource("1_8uixh")
+name = "Hidden Temple"
+type = 2
+LVL = 3.0
+STR = 0.0
+VIT = 20.0
+MOV = 0.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 0,
+"Spear": 0
+}
+traits = Array[int]([])

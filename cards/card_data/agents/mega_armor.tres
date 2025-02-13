@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Agent" load_steps=4 format=3 uid="uid://ca7novy8c5f6e"]
+
+[ext_resource type="Script" path="res://cards/abilities/ability.gd" id="1_l3g3o"]
+[ext_resource type="Texture2D" uid="uid://dq5gsh0hu6ch4" path="res://cards/images/agents/mega_armor.jpg" id="2_udgny"]
+[ext_resource type="Script" path="res://cards/agent.gd" id="3_n36x8"]
+
+[resource]
+script = ExtResource("3_n36x8")
+image = ExtResource("2_udgny")
+sprite = ExtResource("2_udgny")
+name = "Mega Armor"
+type = 1
+LVL = 20.0
+STR = 10.0
+VIT = 18.0
+MOV = 2.0
+cost = {
+"Basket": 0,
+"Book": 0,
+"Gear": 10,
+"Spear": 0
+}
+traits = Array[int]([1])
+abilities = Array[ExtResource("1_l3g3o")]([])
