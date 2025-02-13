@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dcu4qyg42672p"]
+[gd_scene load_steps=17 format=3 uid="uid://dcu4qyg42672p"]
 
 [ext_resource type="PackedScene" uid="uid://duehychs7w613" path="res://board/board.tscn" id="1_lg47m"]
 [ext_resource type="Script" path="res://ui/ui_manager.gd" id="3_hswep"]
@@ -15,13 +15,7 @@
 [ext_resource type="Script" path="res://main/states/end_round.gd" id="12_jw1tc"]
 [ext_resource type="Script" path="res://main/states/response_round.gd" id="14_ih6ex"]
 [ext_resource type="Script" path="res://main/states/game_over.gd" id="15_6v1r4"]
-
-[sub_resource type="Theme" id="Theme_vtd82"]
-Button/font_sizes/font_size = 30
-Label/colors/font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjhl6"]
-bg_color = Color(0.203922, 0.541176, 0.219608, 1)
+[ext_resource type="PackedScene" uid="uid://bj124xalybp63" path="res://ui/main_menu.tscn" id="16_dutad"]
 
 [node name="Main" type="Node2D"]
 
@@ -99,59 +93,6 @@ script = ExtResource("14_ih6ex")
 [node name="GameOver" type="Node" parent="StateMachine"]
 script = ExtResource("15_6v1r4")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_vtd82")
-theme_override_styles/panel = SubResource("StyleBoxFlat_wjhl6")
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/PanelContainer/MarginContainer"]
-layout_mode = 2
-color = Color(0.490196, 0.752941, 0.513726, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 40
-text = "Gaea's Gambit"
-horizontal_alignment = 1
-vertical_alignment = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "New Game"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
-layout_mode = 2
-size_flags_vertical = 8
-
-[node name="Button" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer"]
-custom_minimum_size = Vector2(40, 40)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "X"
+[node name="MainMenu" parent="." instance=ExtResource("16_dutad")]
 
 [connection signal="pressed" from="UI/Buttons/EndTurn" to="UI" method="_on_end_turn_pressed"]
